@@ -8,7 +8,7 @@ import useCurrentUser from "@/hooks/useCurrentUser";
 import { signOut } from "next-auth/react";
 
 const Sidebar = () => {
-  const { data: currrentUser } = useCurrentUser();
+  const { data: currentUser } = useCurrentUser();
 
   const items = [
     {
@@ -24,7 +24,7 @@ const Sidebar = () => {
     },
     {
       label: "Profile",
-      href: "/users/123",
+      href: `/users/${currentUser?.id}`,
       icon: FaUser,
       auth: true,
     },
@@ -44,7 +44,7 @@ const Sidebar = () => {
               auth={item.auth}
             />
           ))}
-          {currrentUser && (
+          {currentUser && (
             <SidebarItem
               onClick={() => signOut()}
               icon={BiLogOut}

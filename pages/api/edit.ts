@@ -27,8 +27,8 @@ export default async function handler(
         name,
         username,
         bio,
-        profileImage,
         coverImage,
+        profileImage,
       },
     });
 
