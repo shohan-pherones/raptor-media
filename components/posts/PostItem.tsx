@@ -97,7 +97,13 @@ const PostItem: React.FC<PostItemProps> = ({ data = {}, userId }) => {
               {createdAt} ago
             </span>
           </div>
-          <div className="text-white mt-1">{data.body}</div>
+          <div
+            className={`text-white mt-1 ${
+              data.body.length <= 100 ? "text-3xl" : ""
+            }`}
+          >
+            {data.body}
+          </div>
           <div className="flex flex-row items-center mt-3 gap-10">
             <div
               className="
