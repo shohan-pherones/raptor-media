@@ -1,6 +1,6 @@
 # Raptor Media
 
-Introducing the ultimate Raptor Media platform built with the latest and greatest technologies! I have used Next.js, Prisma, Tailwind CSS, and NextAuth to create a powerful and modern social media platform that's sure to impress. With Next.js, I've built a fast and responsive web application that provides an exceptional user experience. Prisma provides seamless database integration, making data management and retrieval a breeze. Tailwind CSS ensures a clean and elegant design, with an easy-to-use UI. Finally, NextAuth provides secure authentication and authorization features, ensuring that our users' data is always safe and protected. Whether you're a social media enthusiast or simply looking for a reliable platform to share your thoughts and ideas, the Raptor Media platform is the perfect choice. Join us now and experience the future of social media!
+Introducing the ultimate Raptor Media platform built with the latest and greatest technologies! I have used Next.js, Prisma, Tailwind CSS, and NextAuth with TypeScript to create a powerful and modern social media platform that's sure to impress. With Next.js, I've built a fast and responsive web application that provides an exceptional user experience. Prisma provides seamless database integration, making data management and retrieval a breeze. Tailwind CSS ensures a clean and elegant design, with an easy-to-use UI. Finally, NextAuth provides secure authentication and authorization features, ensuring that our users' data is always safe and protected. Whether you're a social media enthusiast or simply looking for a reliable platform to share your thoughts and ideas, the Raptor Media platform is the perfect choice. Join us now and experience the future of social media!
 
 ## Features
 
@@ -29,6 +29,8 @@ Raptor Media is built using the MERN stack, featuring the following powerful too
 - **Next.js:** A popular React framework that provides server-side rendering, automatic code splitting, and other performance optimizations.
 
 - **React:** A JavaScript library for building user interfaces that allows developers to create reusable UI components.
+
+- **TypeScript:** A superset of JavaScript that adds optional static typing and other features to the language. It enables developers to catch errors at compile-time rather than runtime, making it easier to build and maintain large-scale applications. With TypeScript, developers can write more predictable and robust code, and benefit from better code editor support, as well as improved developer experience. TypeScript is widely used in many modern web development frameworks, and it can be integrated with other tools and libraries to enhance the development process.
 
 - **Zustand:** A lightweight state management library for React that provides a simple API for managing global state in your application.
 

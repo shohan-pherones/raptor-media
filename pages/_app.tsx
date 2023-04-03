@@ -12,7 +12,21 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <SessionProvider session={pageProps.session}>
       <Head>
-        <title>Raptor Media</title>
+        <meta name="author" content="Md. Shohanur Rahman" />
+        <meta
+          name="description"
+          content="Join Raptor Media and experience the future of social media with a fast, responsive, and secure platform built with the latest technologies."
+        />
+        <meta
+          name="keywords"
+          content="Raptor Media, social media platform, Next.js, Prisma, Tailwind CSS, NextAuth, TypeScript, fast, responsive, secure, modern, user experience."
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="canonical" content="https://raptor-media.vercel.app" />
+        <title>
+          Raptor Media - The Ultimate Social Media Platform for Sharing Your
+          Ideas
+        </title>
       </Head>
       <Toaster />
       <RegisterModal />
