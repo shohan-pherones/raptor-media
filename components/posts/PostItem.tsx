@@ -102,18 +102,17 @@ const PostItem: React.FC<PostItemProps> = ({ data = {}, userId }) => {
               data?.body?.length <= 100 ? "text-3xl" : ""
             }`}
           >
-            {data.body &&
-              data.body.split(" ").map((word: string, index: number) => {
-                if (word.startsWith("#")) {
-                  return (
-                    <span key={index} className="text-sky-500">
-                      {word}{" "}
-                    </span>
-                  );
-                } else {
-                  return <span key={index}>{word} </span>;
-                }
-              })}
+            {data?.body?.split(" ").map((word: string, index: number) => {
+              if (word.startsWith("#")) {
+                return (
+                  <span key={index} className="text-sky-500">
+                    {word}{" "}
+                  </span>
+                );
+              } else {
+                return <span key={index}>{word} </span>;
+              }
+            })}
           </div>
           <div className="flex flex-row items-center mt-3 gap-10">
             <div
