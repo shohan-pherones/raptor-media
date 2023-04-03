@@ -50,7 +50,19 @@ const UserBio: React.FC<UserBioProps> = ({ userId }) => {
         </div>
 
         <div className="flex flex-col mt-4">
-          <p className="text-white">{fetchedUser?.bio}</p>
+          <p className="text-white">
+            {fetchedUser?.bio.split(" ").map((word: string, index: number) => {
+              if (word.startsWith("#")) {
+                return (
+                  <span key={index} className="text-sky-500">
+                    {word}{" "}
+                  </span>
+                );
+              } else {
+                return <span key={index}>{word} </span>;
+              }
+            })}
+          </p>
           <div className="flex flex-row items-center gap-2 mt-4  text-neutral-500">
             <BiCalendar size={24} />
             <p>Joined {createdAt}</p>
