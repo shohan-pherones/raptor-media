@@ -23,6 +23,10 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <meta name="robots" content="index, follow" />
         <meta name="canonical" content="https://raptor-media.vercel.app" />
+        <link
+          rel="icon"
+          href="https://img.icons8.com/parakeet/48/null/twitter.png"
+        />
         <title>
           Raptor Media - The Ultimate Social Media Platform for Sharing Your
           Ideas
